@@ -32,7 +32,7 @@ export async function ContactFunction(
     await transporter.sendMail({
       from: `${name} <${email}>`,
       to: process.env.NODEMAILER_DESTINATION_EMAIL,
-      subject: "arnia.pl - Formularz kontaktowy",
+      subject: "kopciuszek-secondhand.pl - Formularz kontaktowy",
       text: message,
       html: `
         Imię i nazwisko: <strong>${name}</strong> <br/>
