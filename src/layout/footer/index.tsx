@@ -13,7 +13,7 @@ const LayoutFooter: React.FC<Props> = (props) => {
   const { locale } = props;
 
   return ( // bg-primary 
-    <footer className="relative p-5 min-h-[200px] md:h-[200px]" style={{backgroundColor: "#F57F17f0"}}>
+    <footer className="relative p-5 min-h-[200px] md:h-[200px]" style={{backgroundColor: "#F57F17F0"}}>
       <div className="relative h-full flex flex-col gap-5 items-center mx-auto text-white/80 md:max-w-[700px] md:flex-row md:justify-between lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px]">
         <div className="flex flex-col gap-2 order-2 md:order-1 md:text-sm lg:text-base">
           <div className="flex group space-x-2 items-center [&_a]:transition-colors [&_svg]:transition-colors">

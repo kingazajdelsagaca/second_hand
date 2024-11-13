@@ -11,16 +11,17 @@ type Props = {
 const LayoutNavbarElements: React.FC<Props> = (props) => {
   const { translations, OnClick } = props;
   const {
+    // main,
     about,
-    contact,
     education,
-    services,
-    forgiveness,
-    journey,
+    // services,
+    // forgiveness,
+    // journey,
     articles,
-    courses,
     blog,
-    book,
+    // courses,
+    // book,
+    contact,
   } = translations;
 
   const toggleDropdown = () => {
@@ -32,70 +33,49 @@ const LayoutNavbarElements: React.FC<Props> = (props) => {
 
   return (
     <>
-      <Link href="/about" className="hover:text-gray-900" onClick={OnClick}>
-        {about}
-      </Link>
 
-      <Link href="/education" className="hover:text-gray-900" onClick={OnClick}>
-        {education}
-      </Link>
+    {/* <Link href="/" className="hover:text-gray-900" onClick={OnClick}>
+      {main}
+    </Link> */}
 
-      {!props.isMobile ? (
-        <div className="relative">
-          <button
-            className="text-center inline-flex items-center"
-            type="button"
-            onClick={toggleDropdown}
+    <Link href="/about" className="hover:text-gray-900" onClick={OnClick}>
+      {about}
+    </Link>
+
+    <Link href="/education" className="hover:text-gray-900" onClick={OnClick}>
+      {education}
+    </Link>
+
+    {/* {{!props.isMobile ? (
+      <div className="relative">
+        <button
+          className="text-center inline-flex items-center"
+          type="button"
+          onClick={toggleDropdown}
+        >
+          {services}
+          <svg
+            id="dropdownArrow"
+            className="w-2.5 h-2.5 ms-3 duration-300"
+            fill="none"
+            viewBox="0 0 10 6"
           >
-            {services}
-            <svg
-              id="dropdownArrow"
-              className="w-2.5 h-2.5 ms-3 duration-300"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-          </button>
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </button>
 
-          <div
-            id="dropdown"
-            className="z-10 absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 "
-          >
-            <ul className="py-2 text-sm text-gray-700">
-              <li className="p-3">
-                <Link
-                  href="/services/forgiveness"
-                  className="hover:text-gray-900"
-                  onClick={OnClick}
-                >
-                  {forgiveness}
-                </Link>
-              </li>
-              <hr />
-              <li className="p-3">
-                <Link
-                  href="/services/journey"
-                  className="hover:text-gray-900"
-                  onClick={OnClick}
-                >
-                  {journey}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      ) : (
-        <>
-          {services} :
-          <ul className="pl-2">
-            <li className="p-3 py-1">
+        <div
+          id="dropdown"
+          className="z-10 absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 "
+        >
+          <ul className="py-2 text-sm text-gray-700">
+            <li className="p-3">
               <Link
                 href="/services/forgiveness"
                 className="hover:text-gray-900"
@@ -104,7 +84,8 @@ const LayoutNavbarElements: React.FC<Props> = (props) => {
                 {forgiveness}
               </Link>
             </li>
-            <li className="p-3 py-1">
+            <hr />
+            <li className="p-3">
               <Link
                 href="/services/journey"
                 className="hover:text-gray-900"
@@ -114,30 +95,58 @@ const LayoutNavbarElements: React.FC<Props> = (props) => {
               </Link>
             </li>
           </ul>
-        </>
-      )}
-      <Link href="/articles" className="hover:text-gray-900" onClick={OnClick}>
-        {articles}
-      </Link>
-      {/* Ukryte */}
-      <Link
-        href="/book"
-        className="hover:text-gray-900 hidden"
-        onClick={OnClick}
-      >
-        {book}
-      </Link>
+        </div>
+      </div>
+    ) : (
+      <>
+        {services} :
+        <ul className="pl-2">
+          <li className="p-3 py-1">
+            <Link
+              href="/services/forgiveness"
+              className="hover:text-gray-900"
+              onClick={OnClick}
+            >
+              {forgiveness}
+            </Link>
+          </li>
+          <li className="p-3 py-1">
+            <Link
+              href="/services/journey"
+              className="hover:text-gray-900"
+              onClick={OnClick}
+            >
+              {journey}
+            </Link>
+          </li>
+        </ul>
+      </>
+    )}} */}
+    <Link href="/articles" className="hover:text-gray-900" onClick={OnClick}>
+      {articles}
+    </Link>
 
-      <Link href="/blog" className="hover:text-gray-900" onClick={OnClick}>
-        {blog}
-      </Link>
+    <Link href="/blog" className="hover:text-gray-900" onClick={OnClick}>
+      {blog}
+    </Link>
 
-      <Link href="/courses" className="hover:text-gray-900" onClick={OnClick}>
-        {courses}
-      </Link>
-      <Link href="/contact" className="hover:text-gray-900" onClick={OnClick}>
-        {contact}
-      </Link>
+    {/* {<Link href="/courses" className="hover:text-gray-900" onClick={OnClick}>
+      {courses}
+    </Link>} */}
+    
+    {/* Ukryte */}
+    {/* {<Link
+      href="/book"
+      className="hover:text-gray-900 hidden"
+      onClick={OnClick}
+    >
+      {book}
+    </Link>} */}
+
+    <Link href="/contact" className="hover:text-gray-900" onClick={OnClick}>
+      {contact}
+    </Link>
+
     </>
   );
 };

@@ -25,7 +25,8 @@ const LayoutNavbarMobileMenu: React.FC<Props> = (props) => {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="fixed top-0 z-50 w-full bg-[#232331] border-none text-white/70 sm:w-[400px] lg:hidden"
+        /*bg-[232331]*/
+        className="fixed top-0 z-50 w-full bg-[#c45902] border-none text-white/70 sm:w-[400px] lg:hidden"
       >
         <div className="mt-8 flex flex-col gap-4 text-lg [&>a]:transition-colors">
           <LayoutNavbarElements
@@ -34,7 +35,7 @@ const LayoutNavbarMobileMenu: React.FC<Props> = (props) => {
             isMobile={true}
           />
         </div>
-        <div className="absolute left-6 bottom-6">
+        <div className="absolute left-6 bottom-6" style={{color: "#F0943E"}}>
           <LayoutSelectLanguage locale={locale} />
         </div>
       </SheetContent>
