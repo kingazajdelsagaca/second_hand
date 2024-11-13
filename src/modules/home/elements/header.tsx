@@ -29,13 +29,15 @@ const HomePageHeader: React.FC = () => {
       <Image
         src="/clothes05-polina-tankilevitch.jpg"
         className="absolute object-cover object-left top-0 left-0 w-full h-full z-0 pointer-events-none lg:object-center"
-        alt="BG"
+        alt="bacground clothes"
         width={1920}
         height={1080}
 
       />
       <div className="absolute inset-0 bg-gray-100/60  backdrop-blur-sm sm:opacity-60"></div>
-      <div id="main-logo" className="z-10 pt-16 flex flex-col p-5 gap-10 mx-auto w-full md:max-w-[700px] lg:p-0 lg:gap-5 lg:flex-row lg:items-center lg:justify-between lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px]">
+      <div id="main-logo" className="z-10 pt-16 flex flex-col p-5 gap-10 mx-auto w-full 
+      md:max-w-[700px] lg:p-0 lg:gap-5 lg:flex-row lg:items-center lg:justify-between 
+      lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px]">
         <Image 
           src={Logo1.src}
           placeholder="blur"
@@ -53,11 +55,14 @@ const HomePageHeader: React.FC = () => {
       </div>
       <div className="fixed bottom-0 end-0  z-[100]  ">
       <div className="p-3 pl-0 flex flex-col ">
+        {/* border-gray-600 bg-primary*/}
               <Link href='https://www.facebook.com/' className="cursor-pointer">
-                <IconBrandFacebook className="cursor-pointer bg-primary text-white rounded-xl border border border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/> 
+                <IconBrandFacebook className="cursor-pointer text-white 
+                rounded-xl border border border-white m-2 w-[40px] h-[40px] shadow-md" /> 
               </Link>
               <Link href='https://www.instagram.com/' className="curson-pointer">
-                <IconBrandInstagram className="cursor-pointer bg-primary text-white rounded-xl border border border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/>
+                <IconBrandInstagram className="cursor-pointer  text-white 
+                rounded-xl border border border-white m-2 w-[40px] h-[40px] shadow-md"/>
               </Link>
           </div>
       </div>

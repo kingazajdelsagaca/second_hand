@@ -7,6 +7,7 @@ import { Loader2Icon } from "lucide-react";
 import PaginationComponent from "~/layout/pagination";
 import { StrapiBlogType } from "~/lib/actions";
 import NewBlogComponent from "./NewBlogsComponent";
+import Link from "next/link";
 
 type Props = {
   strapiUrl: string | undefined;
@@ -88,8 +89,11 @@ const NewBlogs: React.FC<Props> = (props) => {
     return (
       <div className="flex justify-center items-center min-h-[calc(100vh-85px-200px)]">
         <p className="font-semibold text-center">
-          Nie udało się wczytać blogów
+          Nie udało się wczytać bloga
         </p>
+        <Link href="/" className="mt-1 font-semibold" style={{color: "#F57F17"}}>
+          Back to home page
+        </Link>
       </div>
     );
   }

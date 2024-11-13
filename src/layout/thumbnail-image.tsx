@@ -3,7 +3,7 @@ import React from "react";
 
 import { cn, getStrapiFileUrl } from "~/lib/utils";
 
-import BrandLogo from "@public/brand.png";
+import BrandLogo from "@public/sechan.png";
 
 type Props = {
   url: string | undefined;

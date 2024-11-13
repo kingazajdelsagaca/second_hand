@@ -30,8 +30,8 @@ const HomePageIntro: React.FC = () => {
         }
         Cieszymy z&nbsp;Twojej wizyty na&nbsp;naszej stronie.<br/>Mamy nadzieję, że&nbsp;znajdziesz tu to, czego szukasz.
       </p>
-
-      <div className="flex flex-col px-5 gap-1 py-5 md:justify-center md:flex-row md:flex-wrap lg:justify-between lg:px-0">
+      {/* md:justify-center lg:justify-between */}
+      <div className="flex flex-col px-5 gap-1 py-5 md:justify-evenly md:flex-row md:flex-wrap lg:px-0">
         <HomePageServiceComponent
           icon={<IconHeart size={48} className="text-green-500" />}
           /*title={translation("1.Title")}

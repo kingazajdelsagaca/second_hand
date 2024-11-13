@@ -44,7 +44,7 @@ type Props = {
                         <div className="space-y-2 flex justify-center lg:justify-end lg:w-[400px] xl:w-[500px] 2xl:w-[550px]">
                             <Image
                                 src="/clothes03-kaip.jpg"
-                                alt="Logo"
+                                alt="clothes hanging"
                                 className="max-w-[300px] lg:max-w-[470px] max-h-[300px]"
                                 width={4032}
                                 height={3024}
@@ -57,7 +57,7 @@ type Props = {
                         <div className="space-y-2 flex justify-center lg:justify-end lg:w-[400px] xl:w-[500px] 2xl:w-[550px] p-4">
                             <Image
                                 src="/miscelaneous01-lum3n7.jpg"
-                                alt="Logo"
+                                alt="clothes and accessories"
                                 className="max-w-[300px] lg:max-w-[470px] max-h-[300px]"
                                 width={4032}
                                 height={3024}
@@ -78,7 +78,7 @@ type Props = {
                                         locale === "pl" ? <>Oprócz szerokiego wyboru sukienek, spodni, bluzek, koszul 
                                         czy spodenek oferujemy także okrycia wierzchnie, obuwie oraz akcesoria. U&nbsp;nas 
                                         znajdziesz paski, broszki, chustki, czapki, kurtki i&nbsp;wiele innych rzeczy. 
-                                        Oferujemy zarówno odzież dla dorosłych, jak i&nbsp;dzieci.</>
+                                        Oferujemy odzież zarówno dla dorosłych, jak i&nbsp;dzieci.</>
                                         : locale === "de" ? <>Neben einer großen Auswahl an Kleidern, Hosen, Blusen, 
                                         Hemden und Shorts bieten wir auch Oberbekleidung, Schuhe und Accessoires an. 
                                         Hier finden Sie Gürtel, Broschen, Schals, Mützen, Jacken und viele andere Dinge. 

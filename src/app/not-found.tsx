@@ -12,18 +12,19 @@ const Page404: React.FC = () => {
         <main className="w-full bg-white h-screen flex justify-center items-center">
           <div className="flex flex-col items-center">
             <Image
-              src="/logo-lg v0.png"
+              src="/sechan.png"
               width={400}
               height={45}
               sizes="(max-width: 768px): 100px, 180px"
               className="mb-5 w-fit"
-              alt="SAGACA Logo"
+              alt="Kopciuszek logo"
               priority
             />
             <h1 className="font-bold text-black text-center text-xl lg:text-2xl">
               Page not found
             </h1>
-            <Link href="/" className="mt-1 text-primary font-semibold">
+            {/*text-primary */}
+            <Link href="/" className="mt-1 font-semibold" style={{color: "#F57F17"}}>
               Back to home page
             </Link>
           </div>

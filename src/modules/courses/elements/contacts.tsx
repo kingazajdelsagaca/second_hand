@@ -14,11 +14,13 @@ const CoursesPageContacts: React.FC = () => {
         {translation('Contact')}
       </p>
       <div className="flex justify-center  my-6 mx-auto">
-        <Link href='https://www.facebook.com/arnia.uzdrawianie.duchowe' className="cursor-pointer">
-          <IconBrandFacebook className="cursor-pointer bg-primary text-white rounded-xl border border border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/> 
+        <Link href='https://www.facebook.com/' className="cursor-pointer">
+          <IconBrandFacebook className="cursor-pointer bg-primary text-white rounded-xl border border 
+          border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/> 
         </Link>
-        <Link href='https://www.instagram.com/arnia.uzdrawianie_duchowe' className="curson-pointer">
-          <IconBrandInstagram className="cursor-pointer bg-primary text-white rounded-xl border border border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/>
+        <Link href='https://www.instagram.com/' className="curson-pointer">
+          <IconBrandInstagram className="cursor-pointer bg-primary text-white rounded-xl border border 
+          border-gray-600 m-2 w-[40px] h-[40px] shadow-md"/>
         </Link>
       </div>
       

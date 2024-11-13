@@ -19,10 +19,10 @@ const LayoutFooter: React.FC<Props> = (props) => {
           <div className="flex group space-x-2 items-center [&_a]:transition-colors [&_svg]:transition-colors">
             <IconMail size={32} className="group-hover:text-white" />
             <Link
-              href="mailto:sklep@kopciuszek.pl"
+              href="mailto:sklep@kopciuszek-secondhand.pl"
               className="group-hover:text-white"
             >
-              sklep@kopciuszek.pl
+              sklep@kopciuszek-secondhand.pl
             </Link>
           </div>
           <div className="flex group space-x-2 items-center [&_a]:transition-colors [&_svg]:transition-colors">
@@ -56,7 +56,7 @@ const LayoutFooter: React.FC<Props> = (props) => {
         </div>
         <div className="order-1 flex flex-col items-center space-y-3 md:order-2">
           <Image
-            src="/brand.png"
+            src="/sechan.png"
             width={48}
             height={0}
             className="w-fit mx-auto"
@@ -64,9 +64,10 @@ const LayoutFooter: React.FC<Props> = (props) => {
             priority
           />
           <h4 className="text-white/60 font-medium text-center text-sm">
-            &copy; {new Date().getFullYear()} Arnia.pl
+            &copy; {new Date().getFullYear()} Kopciuszek-secondhand.pl
           </h4>
-          <LayoutSelectLanguage locale={locale} bg="bg-secondary" />
+          {/*bg="bg-secondary"*/}
+          <LayoutSelectLanguage locale={locale}/>
         </div>
         <div className="order-3 hidden space-y-3 text-center leading-4 [&>p]:m-0 md:block md:text-sm md:text-right lg:text-base">
           {locale === "pl" ? 

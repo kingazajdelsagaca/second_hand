@@ -105,7 +105,8 @@ export default function Gallery(props:props)
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setSelectedImage(null)}>
           
           <div className="relative max-w-[100vw] max-h-[100vh] p-0">
-            <span className="absolute end-[-50px] top-[-18px] m-4 rounded-full bg-gray-900/40 h-[25px] w-[25px] text-center text-white cursor-pointer">X</span>
+            <span className="absolute end-[-50px] top-[-18px] m-4 rounded-full bg-gray-900/40 h-[25px] 
+            w-[25px] text-center text-white cursor-pointer">X</span>
             <Image  
                 src={selectedImage.src}
                 alt="Zdjęcie" 
