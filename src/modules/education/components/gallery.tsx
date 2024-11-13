@@ -5,7 +5,8 @@ import image3 from '@public/certificates/Reiki-1-2006[3487].jpg'
 import image4 from '@public/certificates/Reiki-2-2006[3488].jpg'
 import image5 from '@public/certificates/Rueckfuehrungstechnik_JES2017[3489].jpg'
 import image6 from '@public/certificates/Schamanische-Reinkarnation-BF-2008[3490].jpg'
-import image7 from '@public/certificates/TAOB19-21[3492].jpg'
+import image7 from '@public/sign.png'
+import image8 from '@public/sign.png'
 import { useState } from 'react'
 import LayoutSection from '~/layout/section'
 import Image from 'next/image'
@@ -24,7 +25,7 @@ export default function Gallery(props:props)
         title={props.title}
         sectionClassName="py-12 pb-20"
       >
-       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             <div className="bg-gray-200 p-4" onClick={()=>setSelectedImage(image1)}>
                 <Image  
                     src={image1.src}
@@ -88,12 +89,26 @@ export default function Gallery(props:props)
                 />
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image7)}>
+                <label>Skup odzieży i&nbsp;innych używanych przedmiotów</label>
                 <Image  
                     src={image7.src}
-                    alt="Zdjęcie 7" 
-                    className="w-full h-auto"
-                    width={image7.width}
-                    height={image7.height}
+                    alt="second hand clothes" 
+                    width={606}
+                    height={970}
+                    placeholder="blur"
+                    blurDataURL={image7.blurDataURL}
+                />
+            </div>
+            <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image8)}>
+                <label>Skup odzieży i&nbsp;innych używanych przedmiotów</label>
+                <Image  
+                    src={image8.src}
+                    alt="second hand clothes" 
+                    // className="w-full h-auto"
+                    width={606}
+                    height={970}
+                    // width={image8.width}
+                    // height={image8.height}
                     placeholder="blur"
                     blurDataURL={image7.blurDataURL}
                 />
@@ -102,14 +117,15 @@ export default function Gallery(props:props)
       </LayoutSection>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setSelectedImage(null)}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" 
+        onClick={() => setSelectedImage(null)}>
           
           <div className="relative max-w-[100vw] max-h-[100vh] p-0">
             <span className="absolute end-[-50px] top-[-18px] m-4 rounded-full bg-gray-900/40 h-[25px] 
             w-[25px] text-center text-white cursor-pointer">X</span>
             <Image  
                 src={selectedImage.src}
-                alt="Zdjęcie" 
+                alt="product photo" 
                 className="w-auto max-h-[90vh]"
                 width={selectedImage.width}
                 height={selectedImage.height}

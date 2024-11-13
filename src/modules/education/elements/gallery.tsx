@@ -6,7 +6,12 @@ import Gallery from "../components/gallery";
 
 const HomePageIntro = () => {
   const translation = useTranslations("Education");
-    return(<Gallery title={translation('Title2')}/>)
+    return(<Gallery title={
+      // translation('Title2')
+      // Moje certyfikaty
+      // locale === "pl" ? "Kategorie przedmiotów" : locale === "de" ? "Artikelkategorien" : "Item categories"
+      "Kategorie przedmiotów"
+    }/>)
 };
 
 export default HomePageIntro;
