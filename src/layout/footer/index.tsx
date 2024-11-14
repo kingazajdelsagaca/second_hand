@@ -43,7 +43,7 @@ const LayoutFooter: React.FC<Props> = (props) => {
             target="_blank"
             className="flex items-center gap-2 text-sm font-semibold text-white/90 md:text-white/60 transition-colors md:hover:text-white"
           >
-            {locale === "pl" ? "Stworzone przez: " : locale === "de" ?  "Erstellt von " : "Created by: "}
+            {locale === "pl" ? "Stworzone przez: " : locale === "de" ?  "Erstellt von: " : "Created by: "}
             <Image
               src={"/sagacalogo.png"}
               alt="Sagaca"
