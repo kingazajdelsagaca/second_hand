@@ -55,7 +55,7 @@ const LayoutNavbar: React.FC<Props> = (props) => {
         <div>
           <Link href="/" passHref>
             <Image
-              src="/sechan.png"
+              src="/secondHandLogo.png"
               width={50}
               height={50}
               sizes="(max-width: 768px): 40px, 60px absolute"

@@ -12,7 +12,7 @@ const Page404: React.FC = () => {
         <main className="w-full bg-white h-screen flex justify-center items-center">
           <div className="flex flex-col items-center">
             <Image
-              src="/sechan.png"
+              src="/secondHandLogo.png"
               width={400}
               height={45}
               sizes="(max-width: 768px): 100px, 180px"

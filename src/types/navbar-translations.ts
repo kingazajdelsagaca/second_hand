@@ -1,7 +1,7 @@
 export type NavbarTranslationsType = {
-  // main: string;
+  main: string;
   about: string;
-  education: string;
+  offer: string;
   // services: string;
   // forgiveness: string;
   // journey: string;

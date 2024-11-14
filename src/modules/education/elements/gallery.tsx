@@ -5,7 +5,7 @@ import LayoutSection from "~/layout/section";
 import Gallery from "../components/gallery";
 
 const HomePageIntro = () => {
-  const translation = useTranslations("Education");
+  const translation = useTranslations("Offer");
     return(<Gallery title={
       // translation('Title2')
       // Moje certyfikaty

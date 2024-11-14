@@ -1,11 +1,12 @@
 {
   "Navbar": {
-    "About": "O mnie",
-    "Education": "Wykształcenie",
+    "Main": "Strona główna",
+    "About": "O sklepie",
+    "Offer": "Oferta",
     "Services": "Usługi",
     "Forgiveness": "Przebaczenie - Seans Regresyjny",
     "Journey": "Podróż Szamańska",
-    "Articles": "Moje artykuły",
+    "Articles": "Artykuły",
     "Contact": "Kontakt",
     "Blog": "Blog",
     "Book": "Książka",
@@ -74,17 +75,17 @@
     "Description9": "Oczyszczając się z karmicznego balastu, którego nagromadziłam przez ponad trzysta inkarnacji krok po kroku zbliżałam się do ziarna Światła, który jest mój Duch o imieniu Arnia jednocześnie wgłębiając się w połączenie ze Światem Duchowym. Obecnie rozpoznałam większą połowę z moich inkarnacji, które także występowały na innych Planetach. Uświadamiając sobie moje ciemne strony (emocje) i zamieniając je na pozytywne emocje poprzez seans regresyjny i podróże szamańskie wypełniałam się wewnętrzną ufnością, miłością i szczęściem, które tylko wypływają właśnie z Ducha. I Ciebie zachęcam do odkrywania swoich nieświadomych sił, a otaczający Cię świat Duchowy stale opiekuje się Tobą.",
     "Description10": "Seanse regresyjne i rytuały szamańskie są instrumentami medycyny energetycznej. Pracując z nimi stawałam się coraz bardziej wrażliwa, empatyczna i widząca moją przyszłość. Także powrót do ojczyzny przewidziałam, a sen proroczy dał mi siłę działania w tym kierunku. "
   },
-  "Education": {
+  "Offer": {
     "Title": "Moje wykształcenie",
     "Title2": "Moje certyfikaty",
     "Intro": "Nazywam się Beata Kulak, urodziłam się w maju 1975 roku w Krakowie. Mając 30 lat przeżyłam podróże astralne, które zmieniły radykalnie mój styl życia i światopogląd. To one wpłynęły na rozpoczęcie mojego rozwoju osobistego i duchowego. ",
-    "Description1": "1994 rok - świadectwo maturalne; Bielsko-Biała – Technik handlowiec",
-    "Description2": "1996 rok - Alessandro; Winterthur/Szwajcaria - Stylistka paznokci",
-    "Description3": "2006 rok - Dyplom Reiki I i II stopień; Effretikon, Szwajcaria - Masażystka aury",
-    "Description4": "2008 rok - Cert. Szamańska Analiza Reinkarnacji u Barbary Fray/ Szwajcaria – Regreserka",
-    "Description5": "2012 rok - Frauenseminar Bodensee, Julia Onken (Prywatna szkoła Psychologii); Romanshorn, Szwajcaria – Dypl. Prowadząca komunikację i konwersację psychologiczną",
-    "Description6": "2017 rok – Dr. Jan Erik Sigdel: Szkolenia Terapii Reinkarnacyjnej, PSI Basel; Bazylea, Szwajcaria – Cert. Terapeutka reinkarnacji",
-    "Description7": "2021 rok – Dr. Phil. Carlo Zumstein: TAOB – The Art of Bridging – Intensywne szkolenie z szamanizmu; Kiental, Szwajcaria – szamanka"
+    "Description1": "Odzież damska – sukienki, spódnice, bluzki, spodnie, koszule",
+    "Description2": "Odzież męska – spodnie, koszule, swetry, bluzy, szorty, koszulki",
+    "Description3": "Odzież dziecięca – body, bluzy, swetry, kombinezony, piżamy",
+    "Description4": "Galanteria – rękawiczki, paski, wstążki, czapki, chusty, dodatki",
+    "Description5": "Zabawki – pluszaki, małe miękkie zabawki dla dzieci",
+    "Description6": "Torby – materiałowe, skórzane, torby podróżne, eleganckie torebki",
+    "Description7": "Okrycia wierzchnie – kurtki, płaszcze, żakiety"
   },
   "Forgiveness": {
     "Header": {

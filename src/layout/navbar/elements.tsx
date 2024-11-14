@@ -11,9 +11,9 @@ type Props = {
 const LayoutNavbarElements: React.FC<Props> = (props) => {
   const { translations, OnClick } = props;
   const {
-    // main,
+    main,
     about,
-    education,
+    offer,
     // services,
     // forgiveness,
     // journey,
@@ -34,16 +34,16 @@ const LayoutNavbarElements: React.FC<Props> = (props) => {
   return (
     <>
 
-    {/* <Link href="/" className="hover:text-gray-900" onClick={OnClick}>
+    <Link href="/" className="hover:text-gray-900" onClick={OnClick}>
       {main}
-    </Link> */}
+    </Link>
 
     <Link href="/about" className="hover:text-gray-900" onClick={OnClick}>
       {about}
     </Link>
 
     <Link href="/education" className="hover:text-gray-900" onClick={OnClick}>
-      {education}
+      {offer}
     </Link>
 
     {/* {{!props.isMobile ? (

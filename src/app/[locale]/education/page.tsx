@@ -1,6 +1,7 @@
 import { Metadata, NextPage } from "next";
 import { unstable_setRequestLocale } from "next-intl/server";
 import EducationPage from "~/modules/education/";
+// import OfferPage from "~/modules/offer/";
 
 type Props = {
   params: {
@@ -12,6 +13,7 @@ const Page: NextPage<Props> = (props) => {
   const { params } = props;
   unstable_setRequestLocale(params.locale);
 
+  // return <OfferPage />;
   return <EducationPage />;
 };
 

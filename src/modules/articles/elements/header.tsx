@@ -5,10 +5,10 @@ import  Image  from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Link from "next/link";
-import Logo1 from '@public/sechan.png'
-import Logo2 from '@public/sechan.png'
-import Logo3 from '@public/sechan.png'
-import Logo4 from '@public/sechan.png'
+import Logo1 from '@public/secondHandLogo.png'
+import Logo2 from '@public/secondHandLogo.png'
+import Logo3 from '@public/secondHandLogo.png'
+import Logo4 from '@public/secondHandLogo.png'
 // import Logo2 from '@public/logo-lg v2-male .png'
 // import Logo3 from '@public/logo-lg v1-duze .png'
 // import Logo4 from '@public/logo-lg v2-duze .png'

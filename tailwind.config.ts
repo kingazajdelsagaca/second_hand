@@ -30,7 +30,9 @@ const config = {
         xl: "1350px",
       },
       backgroundImage: {
-        "dark-woods": "url(/jumbatron.png)",
+        // "dark-woods": "url(/jumbatron.png)",
+        "quote-main": "url(/clothes04-mdsnmdsnmdsn.jpg)",
+        "quote-about": "url(/miscelaneous02-beyzaa-yurtkuran.jpg)",
       },
       fontFamily: {
         inter: "var(--font-inter)",
@@ -39,9 +41,13 @@ const config = {
       colors: {
         "header-gradient-left": "#3A3A42",
         "header-gradient-right": "#0F0F23",
-        primary: "#7d5da0",
-        secondary: "#b6d053",
+        // primary: "#7d5da0",
+        // secondary: "#b6d053",
         "primary-gray": "#242432",
+        primary: "#F57F17",
+        primary2: "#F57F17F0",  // + opacity
+        secondary: "#F5B717",
+        tertiary: "C45902",
       },
       keyframes: {
         "accordion-down": {

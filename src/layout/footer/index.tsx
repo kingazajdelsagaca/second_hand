@@ -56,7 +56,7 @@ const LayoutFooter: React.FC<Props> = (props) => {
         </div>
         <div className="order-1 flex flex-col items-center space-y-3 md:order-2">
           <Image
-            src="/sechan.png"
+            src="/secondHandLogo.png"
             width={48}
             height={0}
             className="w-fit mx-auto"
@@ -67,7 +67,7 @@ const LayoutFooter: React.FC<Props> = (props) => {
             &copy; {new Date().getFullYear()} Kopciuszek-secondhand.pl
           </h4>
           {/*bg="bg-secondary"*/}
-          <LayoutSelectLanguage locale={locale}/>
+          <LayoutSelectLanguage locale={locale} bg="bg-secondary"/>
         </div>
         <div className="order-3 hidden space-y-3 text-center leading-4 [&>p]:m-0 md:block md:text-sm md:text-right lg:text-base">
           {locale === "pl" ? 

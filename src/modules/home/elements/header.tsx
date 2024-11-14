@@ -7,7 +7,7 @@ import  Image  from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 import {Link} from '~/navigation'
-import Logo1 from '@public/sechan.png'
+import Logo1 from '@public/secondHandLogo.png'
 
 const HomePageHeader: React.FC = () => {
   const translation = useTranslations("Home.Header");
@@ -57,11 +57,11 @@ const HomePageHeader: React.FC = () => {
       <div className="p-3 pl-0 flex flex-col ">
         {/* border-gray-600 bg-primary*/}
               <Link href='https://www.facebook.com/' className="cursor-pointer">
-                <IconBrandFacebook className="cursor-pointer text-white 
+                <IconBrandFacebook className="cursor-pointer text-white bg-primary
                 rounded-xl border border border-white m-2 w-[40px] h-[40px] shadow-md" /> 
               </Link>
               <Link href='https://www.instagram.com/' className="curson-pointer">
-                <IconBrandInstagram className="cursor-pointer  text-white 
+                <IconBrandInstagram className="cursor-pointer text-white bg-primary
                 rounded-xl border border border-white m-2 w-[40px] h-[40px] shadow-md"/>
               </Link>
           </div>

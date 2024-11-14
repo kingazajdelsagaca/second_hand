@@ -25,6 +25,7 @@ const HomePageQuote: React.FC<Props> = (props) => {
           backgroundSize: "cover",
         }}
       >
+        {/* bg-quote-about */}
         <h3 className="py-6 font-outfit text-white text-2xl sm:text-3xl lg:text-3xl block">
             <q className={oleo.className+" block text-center font-medium px-5 max-w-[1000px]"}>
               {/*translation('Quote')*/}

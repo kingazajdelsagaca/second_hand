@@ -5,9 +5,10 @@ export function GetNavbarTranslations(): NavbarTranslationsType {
   const translation = useTranslations("Navbar");
 
   return {
-    // main: translation("Main"),
+    main: translation("Main"),
     about: translation("About"),
-    education: translation("Education"),
+    // education: translation("Education"),
+    offer: translation("Offer"),
     // services: translation("Services"),
     // forgiveness: translation("Forgiveness"),
     // journey: translation("Journey"),

@@ -3,7 +3,7 @@ import { NextRequest } from "next/server";
 
 export default function middleware(request: NextRequest) {
   const i18nRouting = createMiddleware({
-    locales: ["de", "pl"],
+    locales: ["de", "pl", "en"],
     defaultLocale: "pl",
     localeDetection: true,
   });

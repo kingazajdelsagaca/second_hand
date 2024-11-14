@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 const url = process.env.PAGE_URL ?? "http://localhost:3000";
 
 export default async function Sitemap(): Promise<MetadataRoute.Sitemap> {
-  const locales = ["pl", "de"];
+  const locales = ["pl", "de", "en"];
 
   const routes = locales.map((locale) => [
     {
