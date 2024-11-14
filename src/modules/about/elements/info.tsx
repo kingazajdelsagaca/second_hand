@@ -23,11 +23,17 @@ const HomePageInfo = (props:props) => {
         <div className="relative w-full flex flex-col gap-10 md:max-w-[700px]  lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px]">
           <div className="flex flex-col p-3 gap-10 mx-auto w-full lg:p-0 lg:gap-5 lg:flex-row lg:items-center lg:justify-between  lg:px-6">
             <p className="text-black text-center text-base md:text-lg lg:text-justify">
-              {/*translation(content) Czerwcu 2005 roku doznałam pierwszą podróż astralną, w której spotkałam zmarłego dziadka.*/}
-              abc<br/>
+              {/*translation(content) 
+              Czerwcu 2005 roku doznałam pierwszą podróż astralną, w której spotkałam zmarłego dziadka.*/}
+              {translation(content)}
+              {/* https://www.auchan.pl/pl/blog/eco-strefa/rzeczy-z-drugiej-reki-i-odziez-uzywana-czy-ich-kupowanie-jest-eko */}
+              {/* abc<br/>
               def<br/>
               ghi<br/>
               jkl<br/>
+            </p>
+            <p>xxxxxxx<br/>zzzzzzzz</p>
+            <p>aaaa<br/>bbbbb */}
             </p>
           </div>
       </div>

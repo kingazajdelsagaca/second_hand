@@ -32,7 +32,7 @@ const HomePageServiceComponent: React.FC<Props> = (props) => {
       ?<Link
         href={url}
         className="font-semibold text-primary transition-[filter] hover:brightness-95 lg:text-lg">
-        {buttonText}
+        {"buttonText"}
       </Link>
       : (<></>)}
     </div>

@@ -11,6 +11,7 @@ import { useState } from 'react'
 import LayoutSection from '~/layout/section'
 import Image from 'next/image'
 import type { StaticImageData } from 'next/image'
+// import { useTranslations } from "next-intl";
 
 type props = {
     title:string
@@ -18,6 +19,7 @@ type props = {
 
 export default function Gallery(props:props)
 {
+    // const translation = useTranslations("Offer");
   const [selectedImage,setSelectedImage] = useState<null|StaticImageData>()
   return (
     <>
@@ -28,6 +30,7 @@ export default function Gallery(props:props)
        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-gray-200 p-4" onClick={()=>setSelectedImage(image1)}>
                 <label>Ubrania damskie</label>
+                {/* {translation('Gallery01')} */}
                 <Image  
                     src={image1.src}
                     alt="hanging clothes"
@@ -40,6 +43,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image2)}>
                 <label>Wyprzedaże</label>
+                {/* {translation('Gallery02')} */}
                 <Image  
                     src={image2.src}
                     alt="cloth bag"
@@ -52,6 +56,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image3)}>
                 <label>Ubranka i&nbsp;akcesoria dla dzieci</label>
+                {/* {translation('Gallery03')} */}
                 <Image  
                     src={image3.src}
                     alt="kids clothes"
@@ -64,6 +69,7 @@ export default function Gallery(props:props)
                 </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image4)}>
                 <label>Ubrania męskie</label>
+                {/* {translation('Gallery04')} */}
                 <Image  
                     src={image4.src}
                     alt="men clothes"
@@ -76,6 +82,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image5)}>
                 <label>Wystawa sezonowa</label>
+                {/* {translation('Gallery05')} */}
                 <Image  
                     src={image5.src}
                     alt="women clothes"
@@ -88,6 +95,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image6)}>
                 <label>Okrycia wierzchnie</label>
+                {/* {translation('Gallery06')} */}
                 <Image  
                     src={image6.src}
                     alt="jacket" 
@@ -100,6 +108,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image7)}>
                 <label>Torebki i&nbsp;pozostałe akcesoria</label>
+                {/* {translation('Gallery07')} */}
                 <Image  
                     src={image7.src}
                     alt="colorful bags" 
@@ -112,6 +121,7 @@ export default function Gallery(props:props)
             </div>
             <div className="bg-gray-200 p-4"  onClick={()=>setSelectedImage(image8)}>
                 <label>Skup odzieży i&nbsp;innych używanych przedmiotów</label>
+                {/* {translation('Gallery08')} */}
                 <Image  
                     src={image8.src}
                     alt="second hand clothes" 

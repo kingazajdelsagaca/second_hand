@@ -35,7 +35,7 @@ const LayoutNavbarMobileMenu: React.FC<Props> = (props) => {
             isMobile={true}
           />
         </div>
-        <div className="absolute left-6 bottom-6" style={{color: "#000"}}> {/* color: "#F0943E"*/}
+        <div className="absolute left-6 bottom-6" style={{color: "#000",}}> {/* color: "#F0943E"*/}
           <LayoutSelectLanguage locale={locale} />
         </div>
       </SheetContent>

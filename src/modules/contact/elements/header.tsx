@@ -18,7 +18,8 @@ const ContactPageHeader: React.FC<Props> = (props) => {
       <div className="flex flex-col p-5 gap-10 mx-auto w-full md:max-w-[500px] lg:p-0 lg:gap-5 lg:flex-row lg:items-center lg:justify-between lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px]">
         <div className="lg:max-w-[500px] xl:max-w-[550px] 2xl:max-w-[600px]">
           <h1 className="font-outfit text-center mb-4 font-bold text-black text-3xl md:text-4xl lg:text-left xl:text-5xl">
-            {translation("Title")}
+            {/* {translation("Title")} */}
+            {locale === "pl" ? "Kontakt" : locale === "de" ? "Kontakt" : "Contact"}
           </h1>
           {/* [&>a]:text-primary */}
           <p className="text-black text-center [&>a]:underline [&>a]:underline-offset-2 [&>a]:font-medium 

@@ -34,6 +34,7 @@ const LayoutSelectLanguage: React.FC<Props> = (props) => {
 
   return (
     <Select value={value} onValueChange={UpdateValue}>
+      {/* bg-gray-200 */}
       <SelectTrigger className={`rounded-lg border-none outline-none ${bg?bg:"bg-gray-200"} w-[84px]`}>
         <SelectValue>
           <FlagElement locale={locale} />
@@ -43,15 +44,16 @@ const LayoutSelectLanguage: React.FC<Props> = (props) => {
         side="bottom"
         className="-left-6 rounded-lg bg-white text-black border-[1px] border-color-gray-200"
       >
-        <SelectItem value="pl" className="focus:bg-gray-200 focus:text-black">
+        {/* bg-gray-200 */}
+        <SelectItem value="pl" className="focus:bg-secondary focus:text-black">
           <FlagElement locale="pl" />
           <span className="font-semibold">Polski</span>
         </SelectItem>
-        <SelectItem value="de" className="focus:bg-gray-200 focus:text-black">
+        <SelectItem value="de" className="focus:bg-secondary focus:text-black">
           <FlagElement locale="de" />
           <span className="font-semibold">Deutsch</span>
         </SelectItem>
-        <SelectItem value="en" className="focus:bg-gray-200 focus:text-black">
+        <SelectItem value="en" className="focus:bg-secondary focus:text-black">
           <FlagElement locale="en" />
           <span className="font-semibold">English</span>
         </SelectItem>

@@ -47,7 +47,7 @@ const config = {
         primary: "#F57F17",
         primary2: "#F57F17F0",  // + opacity
         secondary: "#F5B717",
-        tertiary: "C45902",
+        tertiary: "#C45902",
       },
       keyframes: {
         "accordion-down": {

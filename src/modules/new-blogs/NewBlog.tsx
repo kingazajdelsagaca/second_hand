@@ -87,13 +87,17 @@ const NewBlogs: React.FC<Props> = (props) => {
 
   if (error) {
     return (
-      <div className="flex justify-center items-center min-h-[calc(100vh-85px-200px)]">
-        <p className="font-semibold text-center">
+      // flex
+      <div className="justify-center items-center min-h-[calc(100vh-85px-200px)]">
+        <div className="flex flex-col items-center">
+          <img src="/secondHandLogo.png" height="10%" width="10%" alt="Kopciuszek logo"/>
+        </div>
+        <h1 className="font-semibold text-center">
           Nie udało się wczytać bloga
-        </p>
-        <Link href="/" className="mt-1 font-semibold" style={{color: "#F57F17"}}>
+        </h1>
+        <p className="text-center"><Link href="/" className="mt-1 font-semibold" style={{color: "#F57F17"}}>
           Back to home page
-        </Link>
+        </Link></p>
       </div>
     );
   }
