@@ -18,10 +18,10 @@ const HomePageQuote: React.FC<Props> = (props) => {
   return (
     <section className="relative py-4 h-[300px] bg-origin-border">
       <div
-        className="absolute top-0 left-0 h-full w-full clip -z-10 flex items-center justify-center"
+        className="absolute bg-quote-about top-0 left-0 h-full w-full clip -z-10 flex items-center justify-center"
         style={{
           clipPath: "inset(0 0 0 0)",
-          backgroundImage: `url(${"miscelaneous02-beyzaa-yurtkuran.jpg"})`,
+          // backgroundImage: `url(${"miscelaneous02-beyzaa-yurtkuran.jpg"})`,
           backgroundSize: "cover",
         }}
       >

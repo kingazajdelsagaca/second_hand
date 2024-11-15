@@ -71,12 +71,12 @@ const LayoutFooter: React.FC<Props> = (props) => {
         </div>
         <div className="order-3 hidden space-y-3 text-center leading-4 [&>p]:m-0 md:block md:text-sm md:text-right lg:text-base">
           {locale === "pl" ? 
-          <><p>ul. Rydla 6, Kraków</p><p>Zapraszamy od&nbsp;poniedziałku do&nbsp;soboty w&nbsp;godzinach 9:00-20:00.</p></>
+          <><p>ul. Kasztanowa 6, Kraków</p><p>Zapraszamy od&nbsp;poniedziałku do&nbsp;soboty w&nbsp;godzinach 9:00-20:00.</p></>
           :
           locale === "de" ? 
-          <><p>Straße Rydla 6, Krakau</p><p>Wir laden Sie von Montag bis Samstag von 9:00 bis 20:00 Uhr ein.</p></>
+          <><p>Straße Kasztanowa 6, Krakau</p><p>Wir laden Sie von Montag bis Samstag von 9:00 bis 20:00 Uhr ein.</p></>
           : 
-          <><p>Rydla Street 6, Krakow</p><p>We invite you from Monday to Saturday from 9:00&nbsp;a.m. to 8:00&nbsp;p.m.</p></>
+          <><p>Kasztanowa Street 6, Krakow</p><p>We invite you from Monday to Saturday from 9:00&nbsp;a.m. to 8:00&nbsp;p.m.</p></>
           }
           <Link href="/contact">
           {/* Napisz do&nbsp;nas. */}
