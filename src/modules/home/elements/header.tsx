@@ -28,7 +28,6 @@ const HomePageHeader: React.FC = () => {
       </video> */}
       <Image
         src="/clothes05-polina-tankilevitch.jpg"
-        // w-full h-full
         className="absolute object-cover object-left top-0 left-0 w-full h-full z-0 pointer-events-none lg:object-center"
         alt="bacground clothes"
         width={1920}
