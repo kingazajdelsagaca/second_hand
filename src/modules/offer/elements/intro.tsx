@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import LayoutSection from "~/layout/section";
+import image from '@public/buying02-nurseryart.jpg'
 
 type props = {
   descriptions: string[];
@@ -15,9 +16,10 @@ const HomePageIntro = (props: props) => {
       <LayoutSection
         title={
           // translation("Title")
+          translation("Title1")
           // Moje wykształcenie
           // locale === "pl" ? "Nasz sklep" : locale === "de" ? "Unser Laden" : "Our shop"
-          "Nasz sklep"
+          // "Nasz sklep"
         }
         sectionClassName="py-12 pb-20"
       >
@@ -45,16 +47,17 @@ const HomePageIntro = (props: props) => {
       justify-center items-center lg:py-8" style={{backgroundColor: "#F57F17"}}>
       <div className="relative w-full flex flex-col gap-10 md:max-w-[700px]  lg:max-w-[950px] 
       xl:max-w-[1200px] 2xl:max-w-[1350px]">
-          <div className="flex flex-col p-5 gap-10 mx-auto w-full lg:p-0 lg:gap-5 lg:flex-row 
+          <div className="flex flex-col grid-cols-2 p-5 gap-10 mx-auto w-full lg:p-0 lg:gap-5 lg:flex-row 
           lg:items-center lg:justify-between">
-            <div className="lg:max-w-[500px] xl:max-w-[550px] 2xl:max-w-[768px] p-6 text-justify">
+            <div className="flex-2 lg:max-w-[500px] xl:max-w-[550px] 2xl:max-w-[768px] p-6 text-justify">
               <h1 className="font-outfit text-center mt-0 mb-8 font-bold text-white text-3xl md:text-4xl 
               lg:text-left xl:text-5xl">
                 {
+                translation("Title2")
                 // translation("Title")
                 // locale === "pl" ? "Nasza oferta" : locale === "de" ? "Unser Angebot" : "Our offer"
                 // Moje wykształcenie
-                "Nasza oferta"
+                // "Nasza oferta"
                 }
               </h1>
               <ul className="text-white text-center text-base md:text-lg lg:text-justify pr-8">
@@ -63,13 +66,13 @@ const HomePageIntro = (props: props) => {
                 ))}
               </ul>
             </div> 
-            <div className="space-y-2 flex justify-between lg:justify-end ml-auto">
+            <div className="space-y-2 flex-1 justify-between lg:justify-end ml-auto">
               <Image
-                src="/buying02-nurseryart.jpg"
+                src={image.src}
                 alt="buying clothes"
                 className="h-[544px]"
-                width={1041}
-                height={927}
+                width={image.width}
+                height={image.height}
               />
             </div>
           </div>

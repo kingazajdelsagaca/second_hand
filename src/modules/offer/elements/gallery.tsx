@@ -6,12 +6,27 @@ import Gallery from "../components/gallery";
 
 const HomePageIntro = () => {
   const translation = useTranslations("Offer");
-    return(<Gallery title={
-      // translation('Title2')
-      // Moje certyfikaty
-      // locale === "pl" ? "Kategorie przedmiotów" : locale === "de" ? "Artikelkategorien" : "Item categories"
-      "Kategorie przedmiotów"
-    }/>)
+    return(
+    <Gallery
+      title={
+        translation('Title3')
+        // Moje certyfikaty
+        // locale === "pl" ? "Kategorie przedmiotów" : locale === "de" ? "Artikelkategorien" : "Item categories"
+        // "Kategorie przedmiotów"
+      }
+      // labels={["abc", "def"]}
+      labels={[
+        translation('Gallery01'),
+        translation('Gallery02'),
+        translation('Gallery03'),
+        translation('Gallery04'),
+        translation('Gallery05'),
+        translation('Gallery06'),
+        translation('Gallery07'),
+        translation('Gallery08'),
+      ]}
+    />
+  )
 };
 
 export default HomePageIntro;

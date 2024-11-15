@@ -28,11 +28,13 @@ const HomePageHeader: React.FC = () => {
       </video> */}
       <Image
         src="/clothes05-polina-tankilevitch.jpg"
+        // w-full h-full
         className="absolute object-cover object-left top-0 left-0 w-full h-full z-0 pointer-events-none lg:object-center"
         alt="bacground clothes"
         width={1920}
         height={1080}
-
+        // width={Logo1.width}
+        // height={Logo1.height}
       />
       <div className="absolute inset-0 bg-gray-100/60  backdrop-blur-sm sm:opacity-60"></div>
       <div id="main-logo" className="z-10 pt-16 flex flex-col p-5 gap-10 mx-auto w-full 

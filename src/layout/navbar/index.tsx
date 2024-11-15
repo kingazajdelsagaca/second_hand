@@ -28,7 +28,13 @@ const LayoutNavbar: React.FC<Props> = (props) => {
       const nav = document.querySelector("nav");
       const logo = document.getElementById("main-logo");
 
-      if (window.scrollY >= 650 && nav?.classList.contains("bg-opacity-0")) {
+      if(!isHomePage && window.scrollY >= 50 && nav?.classList.contains("bg-opacity-0")){
+        nav?.classList.remove("bg-opacity-0");
+      }
+      else if (!isHomePage && window.scrollY < 50 && !nav?.classList.contains("bg-opacity-0")){
+        nav?.classList.add("bg-opacity-0");
+      }
+      else if (isHomePage && window.scrollY >= 650 && nav?.classList.contains("bg-opacity-0")) {
         nav?.classList.remove("bg-opacity-0");
         logo?.classList.add(
           "fixed",
@@ -37,10 +43,8 @@ const LayoutNavbar: React.FC<Props> = (props) => {
           "end-0",
           "opacity-20"
         );
-      } else if (
-        window.scrollY < 650 &&
-        !nav?.classList.contains("bg-opacity-0")
-      ) {
+      }
+      else if (isHomePage && window.scrollY < 650 && !nav?.classList.contains("bg-opacity-0")){
         nav?.classList.add("bg-opacity-0");
         logo?.classList.remove("fixed", "z-[-10]", "opacity-20");
       }
