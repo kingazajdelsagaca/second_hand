@@ -42,7 +42,8 @@ const LayoutNavbarElements: React.FC<Props> = (props) => {
       {about}
     </Link>
 
-    <Link href="/education" className="hover:text-gray-900" onClick={OnClick}>
+    {/* <Link href="/education" className="hover:text-gray-900" onClick={OnClick}> */}
+    <Link href="/offer" className="hover:text-gray-900" onClick={OnClick}>
       {offer}
     </Link>
 

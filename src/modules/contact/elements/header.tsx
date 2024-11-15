@@ -30,7 +30,7 @@ const ContactPageHeader: React.FC<Props> = (props) => {
                 <br />
                 Możesz się również skontaktować z&nbsp;nami drogą mailową:{" "}
                 <Link href="mailto:sklep@kopciuszek-secondhand.pl" style={{color: "#F57F17"}}>sklep@kopciuszek-secondhand.pl</Link>.
-                <br />W celu bezpośredniego kontaktu telefonicznego dzwoń pod numer: 
+                <br />W celu bezpośredniego kontaktu telefonicznego dzwoń pod numer:&#160;
                 <Link href="tel:+48555666777" style={{color: "#F57F17"}}>+48&nbsp;555&nbsp;666&nbsp;777</Link>.
                 <br />
                   {/* {translation('Address')}. {translation('Hours') }

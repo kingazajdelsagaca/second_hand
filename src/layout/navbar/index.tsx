@@ -19,6 +19,9 @@ const LayoutNavbar: React.FC<Props> = (props) => {
   const path = usePathname();
   const isHomePage = path === "/";
   const isArticlesPage = path === "/articles";
+  const isBlogPage = path === "/blog";
+  const isContactPage = path === "/contact";
+  let stickyMenuBar;
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -32,23 +35,29 @@ const LayoutNavbar: React.FC<Props> = (props) => {
           "z-[-10]",
           "start-0",
           "end-0",
-          "opacity-50"
+          "opacity-20"
         );
       } else if (
         window.scrollY < 650 &&
         !nav?.classList.contains("bg-opacity-0")
       ) {
         nav?.classList.add("bg-opacity-0");
-        logo?.classList.remove("fixed", "z-[-10]", "opacity-50");
+        logo?.classList.remove("fixed", "z-[-10]", "opacity-20");
       }
     });
   }, []);
 
+  stickyMenuBar = isArticlesPage ? "relative h-[85px]"
+   : isBlogPage ? "relative h-[85px]" 
+   : isContactPage ? "relative h-[85px]" 
+   : "fixed top-0 left-0 "
+
   return (
     <nav
       className={cn(
-        "z-40 w-full p-5 bg-white bg-opacity-0",
-        isHomePage ? "fixed top-0 left-0 " : "relative h-[85px]"
+        "z-40 w-full p-5 bg-white bg-opacity-0", stickyMenuBar
+        // "z-40 w-full p-5 bg-white bg-opacity-0",
+        // isHomePage ? "fixed top-0 left-0 " : "relative h-[85px]"
       )}
     >
       <div className="mx-auto flex items-center justify-between md:max-w-[700px] lg:max-w-[950px] xl:max-w-[1200px] 2xl:max-w-[1350px] relative">
